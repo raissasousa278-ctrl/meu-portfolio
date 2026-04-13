@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre Mim</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+            <img src="https://res.cloudinary.com/dzvhsqr0p/image/upload/v1775061897/WhatsApp_Image_2026-04-01_at_03.02.03_zgrgyq.jpg" alt="Foto de perfil" class="foto-perfil">
+            <h1>Raissa Rodrigues Sousa</h1>
+            <p class="cabecalho-sub-titulo">Estudante de Tecnologia em Sistemas para Internet</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Olá, sou Raissa, tenho 25 anos e estou no início da minha jornada em Tecnologia em Sistemas para Internet. Conforme vou conhecendo as disciplinas, fico impressionada ao ver como ferramentas simples podem transformar uma página comum em algo chamativo e que realmente funciona. Essa descoberta despertou em mim uma curiosidade enorme de começar a 'colocar a mão na massa'. O que me move hoje é aprender como transformar ideias em realidade através do código e sentir a sensação incrível de ver algo mudar na web com apenas alguns comandos. Meu objetivo agora é seguir estudando e praticando, para transformar essa curiosidade em soluções digitais criativas e eficientes.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div id="container-projetos" class="projetos-caixa">
+        </div>
+   </section>
+
+
+    <section id="contato" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+        <form id="formulario" action="https://formspree.io/f/xrerzola" method="post" class="formulario-contatos">
+            <div class="grupo-form">
+                <input type="text" name="nome" placeholder="Nome" class="campo-form">
+            </div>
+
+            <div class="grupo-form">
+                <input type="email" name="email" placeholder="Seu melhor e-mail" class="campo-form" required>
+            </div>
+
+            <div class="grupo-form">
+                <textarea name="mensagem" class="campo-form" placeholder="Digite sua mensagem" required></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar</button>
+        
+        </form>
+    </section>
+
+    <footer>
+        <small>&copy;Copyright 2026 | Raissa Rodrigues Sousa</small>
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
