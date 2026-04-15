@@ -1,0 +1,57 @@
+
+.navegacao {
+    position: fixed;
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    padding: 1.5rem; 
+}
+
+/* Estilo do Menu de Navegação */
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+}
+.menu-link {
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    left: 0;
+    bottom: 0;
+    transition: width 0.5s ease;
+}
+/* Efeito de hover para o menu */
+.menu-link:hover::after {
+    width: 100%;
+}
+
+
+/* Estilo para celulares */
+@media (max-width: 768px) {
+    .navegacao {
+        padding: 1rem;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+
+    .menu-link {
+        font-size: 0.9rem;
+    }
+}

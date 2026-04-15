@@ -1,0 +1,30 @@
+ /* Alinhamento do Rodapé*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: inherit;
+    padding: 0.3rem 0;
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.02);
+    border-top: 1px solid var(--vidro);
+    color: rgba(226, 232, 240, 0.8);
+    width: 100%;
+}
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.8rem;
+        padding: 1rem 0;
+        margin-top: 20px; ;
+    }
+
+    footer small {
+       font-size: 0.75rem;
+       display:block;
+       padding: 0 10px;
+    }
+}

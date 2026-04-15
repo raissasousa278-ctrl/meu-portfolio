@@ -1,0 +1,80 @@
+/* --- ESTILO DA SEÇÃO DE PROJETOS --- */
+.projetos {
+  padding: 6rem 2rem;
+}
+
+.projetos-caixa {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.projetos-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.projetos-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+}
+
+.projetos-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.projetos-imagem {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-projetos {
+    margin-bottom: 5px;
+}
+
+.paragrafo-projetos {
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.25rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.caixa-texto-projeto {
+    padding: 1.5rem;
+}
+
+.paragrafo-projetos {
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.25rem;
+}
+
+/* Estilo para celulares */
+@media (max-width: 768px) {
+    .projetos {
+        padding: 3rem 1rem;
+    }
+
+    .projetos-caixa {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .projetos-titulo {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .projetos-card {
+        transition: none;
+    }
+}

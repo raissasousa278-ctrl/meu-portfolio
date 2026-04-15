@@ -1,0 +1,74 @@
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 160px;
+    color: white;
+    gap: 1rem; 
+}
+
+/* Estilos da foto de perfil */
+.foto-perfil {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 35%;
+    border: 3px solid var(--vidro);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+/* Estilos dos textos do Cabeçalho */
+h1 {
+    font-size: 3.5rem;
+    color: var(--primaria);
+    font-weight: bold;
+    margin: 20px;
+    margin-bottom: 5px;
+}
+/* Estilos do Subtítulo do Cabeçalho */
+.cabecalho-sub-titulo {
+    font-size: 1.5rem;
+    color: var(--claro);
+    margin-top: 0;
+}
+
+/* Estilo para celulares */
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 60px 20px 20px 20px;
+        min-height: auto;
+        gap: 0.5rem;
+        /* padding: 80px 20px; */
+    }
+
+    .foto-perfil {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        width: 180px;
+        height: 180px;
+        /*margin-top: 40%;*/
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin: 10px;
+        white-space: normal;
+        line-height: 1.2;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cabecalho-sub-titulo {
+        font-size: 1rem;
+        padding: 0;
+        max-width: 100%;
+        margin: 0 auto;
+        line-height: 1.4;
+    }
+}
